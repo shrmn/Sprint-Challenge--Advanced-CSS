@@ -272,6 +272,9 @@ footer {
   margin-bottom: 26px;
 }
 .home .walk .walk-text .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 0.9rem;
   font-size: 1.6rem;
   text-align: center;
@@ -304,14 +307,18 @@ footer {
     padding: 0;
   }
   .home .walk .walk-text {
-    width: 100%;
+    width: 90%;
+    margin: 2rem;
   }
   .home .walk .walk-text .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 0.9rem;
     font-size: 1.6rem;
     text-align: center;
     width: 460px;
-    height: 40px;
+    height: 70px;
     color: #F6F6F6;
     background-color: #22283A;
     border: 1px solid #dee2e6;
