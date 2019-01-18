@@ -15,14 +15,20 @@
 	border-bottom: 1px solid @color;
 }
 
-.sign-up-btn(@width: 100px, @height: 35px) {
-  padding: 1rem;
+//.sign-up-btn(100px, 35px, @wild-sand, @btn-bg-color)
+.sign-up-btn(@width: 100px, @height: 35px, @color: @wild-sand, @bg-color: @btn-bg-color) {
+  padding: 0.9rem;
   font-size: 1.6rem;
   text-align: center;
   width: @width;
   height: @height;
-  color: @wild-sand;
-  background-color: @btn-bg-color;
+  color: @color;
+  background-color: @bg-color;
   border: 1px solid @main-border-color;
   border-radius: 10px;
+
+  &:hover {
+    color: @bg-color;
+    background-color: @color;
+  }
 }
