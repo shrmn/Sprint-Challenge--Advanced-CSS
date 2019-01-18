@@ -18,6 +18,7 @@
 //.sign-up-btn(100px, 35px, @wild-sand, @btn-bg-color)
 .sign-up-btn(@width: 100px, @height: 35px, @color: @wild-sand, @bg-color: @btn-bg-color) {
   .center();
+  position: relative;
   padding: 0.9rem;
   font-size: 1.6rem;
   text-align: center;
@@ -27,9 +28,30 @@
   background-color: @bg-color;
   border: 1px solid @main-border-color;
   border-radius: 10px;
+  outline: 0;
+  overflow:hidden;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2 ease-in;
 
   &:hover {
     color: @bg-color;
     background-color: @color;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    background: @color;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 100%;
+    z-index: -1;
+    -webkit-transition: top 0.2s ease-in;
+  }
+
+  &:hover:before {
+    top: 0;
   }
 }
