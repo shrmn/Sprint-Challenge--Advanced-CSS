@@ -173,7 +173,7 @@ p {
   justify-content: space-evenly;
   align-items: center;
   margin: 1rem auto;
-  max-width: 800px;
+  width: 800px;
 }
 .navigation nav {
   display: flex;
@@ -186,6 +186,17 @@ p {
   text-decoration: none;
   color: #454A59;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .navigation {
+    width: 100%;
+  }
+  .navigation h1 {
+    font-size: 4rem;
+  }
+  .navigation nav {
+    width: 100%;
+  }
 }
 footer {
   color: #22283B;
