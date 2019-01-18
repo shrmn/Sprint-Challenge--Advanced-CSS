@@ -1,1 +1,24 @@
 // Navigation code here
+
+.top-nav {
+  background-color: @nav-bg;
+  .bordered(@nav-border);
+}
+  .navigation {
+    .custom-layout(column, space-evenly);
+    align-items: center;
+    margin: 1rem auto;
+    max-width: 800px;    
+
+    nav {
+      .custom-layout(row, space-evenly);
+      margin: 2rem 0 1rem;
+      width: 55%;
+      
+      a {
+        text-decoration: none;
+        color: @nav-font;
+        font-size: 1.6rem;        
+      }
+    }
+  }
